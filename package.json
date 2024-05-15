@@ -1,0 +1,33 @@
+{
+  "name": "nmap-scanner",
+  "version": "0.1.0",
+  "description": "Connecting to the NMap application locally and displaying it on a webpage",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon --watch server ./server/main.js",
+    "play": "npm run build && concurrently \"node ./server/main.js\" \"node open.js\""
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-nmap": "^4.0.0",
+    "vue": "^3.4.27",
+    "vue-toast-notification": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "nodemon": "^3.1.0",
+    "opener": "^1.5.2",
+    "vite": "^4.0.0"
+  },
+  "keywords": [
+    "nmap"
+  ],
+  "author": "Salman Hossain",
+  "license": "ISC"
+}

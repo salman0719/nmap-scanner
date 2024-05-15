@@ -1,0 +1,11 @@
+.input-short {
+  max-width: 250px;
+}
+
+.input-mid {
+  max-width: 500px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 .05rem rgba(13, 110, 253, .25);
+}
